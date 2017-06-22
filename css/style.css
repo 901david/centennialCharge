@@ -1,4 +1,38 @@
 body 
 {
 	padding: 0;
+	background: url(../img/intro-bg.jpg) center center/cover no-repeat;
+	position: relative;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	/*width: 100vh;*/
+	min-height: 100vh;
+}
+
+.intro {
+	background-image: none;
+	background-color: transparent;
+}
+
+body::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.2);
+	z-index: -1;
+}
+
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.headingFont {
+	text-shadow: 1px 1px black
+;
 }
