@@ -27,12 +27,26 @@ body::before {
 	z-index: -1;
 }
 
-/*.container-fluid {
-	padding-right: 0;
-	padding-left: 0;
-}*/
-
 .headingFont {
 	text-shadow: 1px 1px black
 ;
+}
+
+.topBottomBar {
+	height: 25px;
+	margin-left: -15px;
+	margin-right: 0px;
+	background: grey;
+}
+
+footer {
+	height: 25px;
+	background: grey;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 4;
+	margin: 0 -15px;
+	padding: 0;
 }
