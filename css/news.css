@@ -1,0 +1,12 @@
+	.snippet {
+			font-size: 10px;
+		}
+		.headLine {
+			font-size: 15px;
+			font-weight: bold;
+		}
+		#boxBetter {
+			border:1px solid lightgray;
+			margin:5px;
+		}
+	
