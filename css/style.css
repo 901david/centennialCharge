@@ -59,11 +59,22 @@ footer {
 }
 
 .headingColor {
-	color: #3fa2ec;
+	color: black;
+	display: inline-block;
+	background-color: white;
+	width: 250px;
+	height: 63px;
+	opacity: .8;
+	border-radius: 25px;
 	}
 
 .navTitle
 
 {
 	size: 40px;
+}
+
+.bubbles
+{
+	padding-top: 120px;
 }
