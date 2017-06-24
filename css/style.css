@@ -78,3 +78,19 @@ footer {
 {
 	padding-top: 120px;
 }
+
+.aboutPage {
+	display: block center;
+	opacity: .9;
+	background-color: white;
+	color: black;
+	width: 80%;
+	border-radius: 10px;
+	margin: auto;
+}
+
+.aboutText {
+	padding-top: 10px;
+	font-size: 55px;
+	text-shadow: 1px 1px black
+}
