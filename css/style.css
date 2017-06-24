@@ -87,10 +87,15 @@ footer {
 	width: 80%;
 	border-radius: 10px;
 	margin: auto;
+	padding: 31px;
 }
 
 .aboutText {
 	padding-top: 10px;
 	font-size: 55px;
 	text-shadow: 1px 1px black
+}
+
+.textInAbout {
+	font-size: 22px;
 }
