@@ -1,5 +1,9 @@
 
 initMap()
+
+$.ajax({
+      url: url,
+      method: "GET"
      
         var beachesElement= $("#beaches")
         beaches.on('click', function(event) {
@@ -13,7 +17,7 @@ function beaches() {
           center: {lat: 40.1602635, lng: -105.8436229}
         });
 
-   //      setMarkers(map);
+   //      setMarkers(map);g
    //    }
 
    //    // Data for the markers consisting of a name, a LatLng and a zIndex for the
