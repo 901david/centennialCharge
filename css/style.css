@@ -107,6 +107,7 @@ footer {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
+
 	.snippet {
 			font-size: 10px;
 		}
@@ -136,3 +137,9 @@ footer {
 	#rightButt {
 		margin-top: 75px;
 	}
+
+.contact-forum {
+ padding-left: 10px;
+ text-align: left;
+}
+
