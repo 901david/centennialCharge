@@ -7,6 +7,7 @@ body
 	height: 100%;
 	width: 100%;
 	min-height: 100vh;
+
 }
 
 .intro {
@@ -72,9 +73,10 @@ footer {
 	font-size: 60px;
 	position: relative;
 	float: left;
-	/*margin-top: 10px;*/
-	font-family: 'Bangers', cursive;
+	margin-top: -17px;
+	font-family: 'Allerta Stencil', sans-serif;
 	letter-spacing: 5px;
+	
 }
 
 .bubbles
@@ -105,7 +107,39 @@ footer {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
+
+	.snippet {
+			font-size: 10px;
+		}
+		.headLine {
+			font-size: 15px;
+			font-weight: bold;
+		}
+		#boxBetter {
+			border:1px solid lightgray;
+			margin:5px;
+		}
+	#commentInput {
+		width: 350px;
+	}
+
+	.hideForNow {
+		visibility:hidden;
+	}
+	#newsHolder {
+		border: 5px 0 5px 0;
+		border-color: black;
+	}
+	#leftButt {
+		margin-top: 75px;
+	}
+	
+	#rightButt {
+		margin-top: 75px;
+	}
+
 .contact-forum {
  padding-left: 10px;
  text-align: left;
 }
+
