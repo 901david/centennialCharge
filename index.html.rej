@@ -1,0 +1,9 @@
+diff a/index.html b/index.html	(rejected hunks)
+@@ -9,6 +9,7 @@
+     <meta name="description" content="">
+     <meta name="author" content="">
+ 
++    <title>This title sucks</title>
+ 
+     <!-- Bootstrap Core CSS -->
+     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
