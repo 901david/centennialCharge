@@ -9,22 +9,75 @@
   };
   firebase.initializeApp(config);
   var commentNumber = 0;
-  var databaseRef = firebase.database().ref("/comment");
-
+  var databaseRef = firebase.database().ref("/comments");
+  var databaseRefUser;
+  var databaseRefComm = firebase.database().ref("/comments");
+  var userName;
+  var userComment;
   $(document).ready(function(){
   	$("#commentSubmission").click(function () {
-      var userName = $("#nameInput").val();
-      var userComment = $("#commentInput").val();
+      userName = $("#nameInput").val();
+      userComment = $("#commentInput").val();
+      $("#nameInput").val("");
+      $("#commentInput").val("");
       console.log(userComment + userName);
-      databaseRef.push({
+
+      databaseRefUser = firebase.database().ref("/comments/" + userName + "/" + userComment);
+      databaseRefUser.set({
         name: userName,
-        comment: userComment
+        comment: userComment,
+        likes: 0,
+        dislikes: 0,
+        score: 0
       });
-    });
-    databaseRef.on("child_added", function (snapshot) {
-      commentObj = snapshot.val();
-      $("#commentSection").append("<p>" + commentObj.name + ":  " + commentObj.comment + "</p>");
-    }, function (error) {
 
     });
+    databaseRefComm.on("value", function (snapshot) {
+      
+
+      var rootVal = snapshot.val();
+      
+
+      Object.keys(rootVal).forEach(function(key){
+          // console.log(key);
+          Object.keys(rootVal[key]).forEach(function(innerKey)
+          {
+            
+           $("#commentSection").append("<div class='well'><p>" + rootVal[key][innerKey].name + ":                " + rootVal[key][innerKey].comment + "<br/><br/><br/><p>Likes: " + rootVal[key][innerKey].likes + " Dislikes: " + rootVal[key][innerKey].dislikes + "</p><div class='btn btn-primary likeButt' data-user='" + rootVal[key][innerKey].name + "' data-comment='" + rootVal[key][innerKey].comment + "'>Like</div><div class='btn btn-primary dislikeButt' data-user='" + rootVal[key][innerKey].name + "' data-comment='" + rootVal[key][innerKey].comment + "'>Dislike</div></p></div>");
+            $(".likeButt").click(function () {
+        
+            console.log(this);
+            var userCall = $(this).attr("data-user");
+            var userComm = $(this).attr("data-comment");
+            var tempLink = firebase.database().ref("/comments/" + userCall + "/" + userComm);
+            console.log(tempLink);
+            tempLink.once("value", function (snapshot) {
+            var userServerObj = snapshot.val();
+            var userLikes = userServerObj.likes;
+            userLikes += 1;
+            tempLink.update({likes: userLikes});
+            });
+          });
+            $(".dislikeButt").click(function () {
+        
+            console.log(this);
+            var userCall = $(this).attr("data-user");
+            var userComm = $(this).attr("data-comment");
+            var tempLink = firebase.database().ref("/comments/" + userCall + "/" + userComm);
+            console.log(tempLink);
+            tempLink.once("value", function (snapshot) {
+            var userServerObj = snapshot.val();
+            var userDislikes = userServerObj.dislikes;
+            userDislikes += 1;
+            tempLink.update({dislikes: userDislikes});
+            });
+          });
+          });
+        });
+      
+      }, function (error) {
+
+      });
+      
+    
   });

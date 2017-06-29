@@ -12,4 +12,18 @@
 	#commentInput {
 		width: 350px;
 	}
+
+	.hideForNow {
+		visibility:hidden;
+	}
+	#newsHolder {
+		border: 5px 0 5px 0;
+		border-color: black;
+	}
+	#leftButt {
+		margin-top: 75px;
+	}
 	
+	#rightButt {
+		margin-top: 75px;
+	}
