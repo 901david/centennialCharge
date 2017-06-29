@@ -9,7 +9,8 @@ $(document).ready(function() {
 	url += '?' + $.param({
   'api-key': "6aaccd1f27414fe993e6fad238be539b",
   'q': searchForThis,
-  'page': 2
+  'page': 2,
+  'begin_date': "20170101"
 	});
 		$.ajax({
   		url: url,
