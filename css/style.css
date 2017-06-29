@@ -23,12 +23,12 @@ body::before {
 	left: 0;
 	right: 0;
 	height: 100%;
-	background: rgba(255, 255, 255, 0.05);
+	background: rgba(255, 255, 255, 0.3);
 	z-index: -1;
 }
 
 .headingFont {
-	text-shadow: 1px 1px black
+	font-family: 'Raleway', sans-serif;
 ;
 }
 
@@ -75,8 +75,7 @@ footer {
 	float: left;
 	margin-top: -17px;
 	font-family: 'Allerta Stencil', sans-serif;
-	letter-spacing: 5px;
-	
+	letter-spacing: 5px;	
 }
 
 .bubbles
