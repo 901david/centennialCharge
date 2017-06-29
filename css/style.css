@@ -143,3 +143,27 @@ footer {
  text-align: left;
 }
 
+
+.articleBox {
+	display: block center;
+	opacity: .9;
+	background-color: white;
+	color: black;
+	width: 60%;
+	border-radius: 10px;
+	padding-left: 10px;
+	text-align: left;
+	margin-left: 52px;
+}
+
+.mapBox {
+	display: inline-block;
+	background-color: white;
+	color: black;
+	width: 208%;
+	border-radius: 10px;
+	position: absolute;
+	left: -373px;
+	top: 165px;
+
+}
