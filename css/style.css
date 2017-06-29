@@ -80,6 +80,7 @@ footer {
 .bubbles
 {
 	padding-top: 120px;
+	margin: auto;
 }
 
 .aboutPage {
@@ -90,10 +91,16 @@ footer {
 	width: 80%;
 	border-radius: 10px;
 	margin: auto;
+	padding: 31px;
 }
 
 .aboutText {
 	padding-top: 10px;
 	font-size: 55px;
 	text-shadow: 1px 1px black
+}
+
+.textInAbout {
+	font-size: 26px;
+	font-family: 'Josefin Sans', sans-serif;
 }
