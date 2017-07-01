@@ -31,14 +31,12 @@
       });
 
     });
-    databaseRef.on("value", function (snapshot) {
-      
-$("#commentSection").empty();
+    databaseRef.orderByChild("score").on("value", function (snapshot) {
+        console.log(snapshot.val());
+        $("#commentSection").empty();
       var rootVal = snapshot.val();
-      
-
       Object.keys(rootVal).forEach(function(key){
-          // console.log(key);
+          console.log(key);
           Object.keys(rootVal[key]).forEach(function(innerKey)
           {
             
@@ -81,10 +79,63 @@ $("#commentSection").empty();
           });
           });
         });
-      
-      }, function (error) {
+    }, function (error) {
 
-      });
+    });
+//     databaseRef.on("value", function (snapshot) {
+      
+// $("#commentSection").empty();
+      // var rootVal = snapshot.val();
+      
+
+//       Object.keys(rootVal).forEach(function(key){
+//           // console.log(key);
+//           Object.keys(rootVal[key]).forEach(function(innerKey)
+//           {
+            
+//            $("#commentSection").append("<div class='well'><p>" + rootVal[key][innerKey].name + ":                " + rootVal[key][innerKey].comment + "<br/><br/><br/><p>Likes: " + rootVal[key][innerKey].likes + " Dislikes: " + rootVal[key][innerKey].dislikes + "</p><div id='likeButt" + key.split(' ').join('') + innerKey.split(' ').join('') + "' class='btn btn-primary likeButt' data-user='" + rootVal[key][innerKey].name + "' data-comment='" + rootVal[key][innerKey].comment + "'>Like</div><div id='dislikeButt" + key.split(' ').join('') + innerKey.split(' ').join('') + "' class='btn btn-primary dislikeButt' data-user='" + rootVal[key][innerKey].name + "' data-comment='" + rootVal[key][innerKey].comment + "'>Dislike</div></p></div>");
+
+//             $("#likeButt" + key.split(' ').join('') + innerKey.split(' ').join('')).click(function () {
+
+//             console.log(this);
+//             var userCall = $(this).attr("data-user");
+//             var userComm = $(this).attr("data-comment");
+//             var tempLink = firebase.database().ref("/" + pageValue + "/" + userCall + "/" + userComm);
+//             console.log(tempLink);
+//             tempLink.once("value", function (snapshot) {
+//             var userServerObj = snapshot.val();
+//             var userLikes = userServerObj.likes;
+//             var userDislikes = userServerObj.dislikes;
+//             userLikes += 1;
+//             tempLink.update({likes: userLikes});
+//             var scoreTot = userLikes - userDislikes;
+//             tempLink.update({score: scoreTot});
+
+//             });
+//           });
+//             $("#dislikeButt" + key.split(' ').join('') + innerKey.split(' ').join('')).click(function () {
+
+//             console.log(this);
+//             var userCall = $(this).attr("data-user");
+//             var userComm = $(this).attr("data-comment");
+//             var tempLink = firebase.database().ref("/" + pageValue + "/" + userCall + "/" + userComm);
+//             console.log(tempLink);
+//             tempLink.once("value", function (snapshot) {
+//             var userServerObj = snapshot.val();
+//             var userLikes = userServerObj.likes;
+//             var userDislikes = userServerObj.dislikes;
+//             userDislikes += 1;
+//             tempLink.update({dislikes: userDislikes});
+//             var scoreTot = userLikes - userDislikes;
+//             tempLink.update({score: scoreTot});
+//             });
+//           });
+//           });
+//         });
+      
+//       }, function (error) {
+
+//       });
     
     // console.log(databaseRef.orderByChild("Score"));
 
