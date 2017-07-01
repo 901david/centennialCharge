@@ -136,6 +136,25 @@ footer {
 		background-color: white;
 		opacity:0.9;
 		border-radius: 10px;
+		width:80% !important;
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+	#newsHolder a:link{
+		color:black;
+
+	}
+	#newsHolder a:visited{
+		color:black;
+
+	}
+	#newsHolder a:hover{
+		color:white;
+
+	}
+	#newsHolder a:visited{
+		color:black;
+
 	}
 	#leftButt {
 		margin-top: 75px;
@@ -162,6 +181,10 @@ footer {
 	text-align: left;
 	margin-left: 52px;
 }
+.articleBox p {
+	margin-left: 10px;
+	margin-right: 10px;
+}
 
 .mapBox {
 	display: inline-block;
@@ -184,8 +207,10 @@ footer {
 	border-radius: 10px;
 	padding-left: 10px;
 	text-align: left;
-	margin-left: 52px;
+	margin-left: 25%;
+	margin-right: 25%;
 }
 .clear {
 	clear:both;
 }
+
