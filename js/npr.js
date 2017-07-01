@@ -21,16 +21,16 @@ $(document).ready(function() {
 	 			if ((article.multimedia.length === 0) || (article.multimedia === undefined)) {
 	 				var articleURL = response.response.docs[i].web_url;
 			  		var articleSnippet = response.response.docs[i].snippet;
-			  		var imageUrl = "../centennialCharge/clickhere.jpg";
+			  		var imageUrl = "img/clickhere.jpg";
 			  		var articleHeadline = response.response.docs[i].headline.main;
-			  		$("#testArea").append("<a href='" + articleURL + "'><div class='col-md-2 col-lg-2' id='boxBetter'><p class='headLine'>" + articleHeadline + "</p><img class='img-responsive d-block img-fluid' alt='Article Image' src='" + imageUrl + "'><p class='snippet'>" + articleSnippet + "</p></div></a>");
+			  		$("#testArea").append("<a href='" + articleURL + "'><div class='col-xs-3 col-sm-3 col-md-3 col-lg-3 center-block' id='boxBetter'><p class='headLine'>" + articleHeadline + "</p><img class='img-responsive d-block img-fluid' alt='Article Image' src='" + imageUrl + "'><p class='snippet'>" + articleSnippet + "</p></div></a>");
 				}
 				else {
 					var articleURL = response.response.docs[i].web_url;
 			  		var articleSnippet = response.response.docs[i].snippet;
 			  		var imageUrl = response.response.docs[i].multimedia[0].url;
 			  		var articleHeadline = response.response.docs[i].headline.main;
-			  		$("#testArea").append("<a href='" + articleURL + "'><div class='col-md-2 col-lg-2' id='boxBetter'><p class='headLine'>" + articleHeadline + "</p><img class='img-responsive d-block img-fluid' alt='Article Image' src='https://static01.nyt.com/" + imageUrl + "'><p class='snippet'>" + articleSnippet + "</p></div></a>");
+			  		$("#testArea").append("<a href='" + articleURL + "'><div class='col-xs-3 col-sm-3 col-md-3 col-lg-3 center-block' id='boxBetter'><p class='headLine'>" + articleHeadline + "</p><img class='img-responsive d-block img-fluid' alt='Article Image' src='https://static01.nyt.com/" + imageUrl + "'><p class='snippet'>" + articleSnippet + "</p></div></a>");
 				}
 				}
  			};

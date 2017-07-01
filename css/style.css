@@ -111,12 +111,14 @@ footer {
 			font-size: 10px;
 		}
 		.headLine {
-			font-size: 15px;
+			font-size:12px;
 			font-weight: bold;
 		}
 		#boxBetter {
-			border:1px solid lightgray;
+			border:1px solid black;
 			margin:5px;
+			background-color: lightgray;
+			opacity:0.9;
 		}
 	#commentInput {
 		width: 350px;
@@ -126,8 +128,13 @@ footer {
 		visibility:hidden;
 	}
 	#newsHolder {
+		overflow: hidden;
+		margin-bottom:25px;
 		border: 5px 0 5px 0;
 		border-color: black;
+		background-color: white;
+		opacity:0.9;
+		border-radius: 10px;
 	}
 	#leftButt {
 		margin-top: 75px;
@@ -177,4 +184,7 @@ footer {
 	padding-left: 10px;
 	text-align: left;
 	margin-left: 52px;
+}
+.clear {
+	clear:both;
 }
