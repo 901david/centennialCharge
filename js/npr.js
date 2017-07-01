@@ -41,7 +41,6 @@ $(document).ready(function() {
  			
  			$("#rightButt").click(function () {
  			$("#testArea").empty();
- 			
  			$("#leftButt").removeClass("hideForNow");
 			x += 3;
 			y += 3;
