@@ -21,7 +21,7 @@ $(document).ready(function(){
 			// insert modal here
 			alert("you did not fill out all the fields");
 		}
-		else {
+		else if ((emailVal.includes("@")) && (emailVal.includes("."))){
 		$("#name").val("");
 		$("#email").val("");
 		$("#message").val("");
@@ -32,6 +32,10 @@ $(document).ready(function(){
 			message: messageVal
 		});
 		alert("We received your message");
+		}
+		else {
+			// insert modal here
+			alert("You did not insert a valid email.");
 		}
 		
 		
