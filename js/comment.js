@@ -14,8 +14,13 @@ var userComment;
 $(document).ready(function(){
 
  $("#commentSubmission").click(function () {
-  userName = $("#nameInput").val();
-  userComment = $("#commentInput").val();
+  userName = $("#nameInput").val().trim();
+  userComment = $("#commentInput").val().trim();
+  if ((userName === "") || (userComment === "")) {
+    // Insert modal here
+    alert("You did not fill outt he fields");
+  }
+  else {
   $("#nameInput").val("");
   $("#commentInput").val("");
   databaseRef.push({
@@ -25,6 +30,7 @@ $(document).ready(function(){
     dislikes: 0,
     score: 0
   });
+}
 });
 
  databaseRef.on("value", function (snapshot) {
@@ -61,7 +67,7 @@ $(document).ready(function(){
 
  function createCommentSection(snapshot)
  {
-    $("#commentSection").append("<div class='well'><p>" + snapshot.name + ":                " + snapshot.comment + "<br/><br/><br/><p>Likes: " + snapshot.likes + " Dislikes: " + snapshot.dislikes + "</p><div id='likeButt" + snapshot.key + "' class='btn btn-primary likeButt' data-snapKey='" + snapshot.key + "'>Like</div><div id='dislikeButt" + snapshot.key + "' class='btn btn-primary dislikeButt' data-snapKey='" + snapshot.key + "'>Dislike</div></p></div>");
+    $("#commentSection").append("<div class='well'><p>" + snapshot.name + ":                " + snapshot.comment + "</p><br/><br/><br/><div id='likeButt" + snapshot.key + "' class='btn btn-success likeButt' data-snapKey='" + snapshot.key + "'>Like</div>" + "   " + "<span class='someSpace'>" + snapshot.likes + "</span><div id='dislikeButt" + snapshot.key + "' class='btn btn-danger dislikeButt' data-snapKey='" + snapshot.key + "'>Dislike</div>" + "   " +  "<span class='someSpace'>" + snapshot.dislikes + "</span></div>");
 
       $("#likeButt" + snapshot.key).click(function()
       {

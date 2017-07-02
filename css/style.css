@@ -250,4 +250,12 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
+#commentSubmission {
+	margin-bottom: 15px;
+}
+.someSpace {
+	padding:10px;
+	font-size: 15px;
+	font-weight: bold;
+}
 
