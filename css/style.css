@@ -258,4 +258,7 @@ footer {
 	font-size: 15px;
 	font-weight: bold;
 }
+#commentBox h1 {
+	margin-top: 15px;
+}
 
