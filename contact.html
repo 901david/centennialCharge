@@ -79,36 +79,36 @@
     <!-- Intro Header -->
     <div class="container-fluid">
      <header class="intro">
-        <div class="row">
+        <div class="row-fluid">
 
             <h1 class="aboutText">Contact</h1>
 
-            <div class="aboutBlock">
+            <div class="aboutBlock col-lg-12">
                 <div class="aboutPage">
-
-                  <form class="contact-forum" data-toggle="validator">
-                    <div class="row" style="padding-bottom: 10px; padding-left: 17px;">
-                        <div class="col-md-6">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="John Smith" required>
+                    
+                      <form>
+                        <div class="form-group row">
+                        <label for="name" class="col-sm-2 col-form-label col-form-label-sm">Name:</label>
+                          <div class="col-sm-10">
+                            <input type="name" class="form-control form-control-sm" id="name" placeholder="Name">
                         </div>
                     </div>
-                    <div class="row" style="padding-bottom: 10px; padding-left: 18px;">
-                        <div class="col-md-6">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
-                        </div>
+                    <div class="form-group row">
+                      <label for="email" class="col-sm-2 col-form-label col-form-label-sm">Email:</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control form-control-sm" id="email" placeholder="you@example.com">
                     </div>
-                    <div class="row" style="padding-left: 18px;">
-                        <div class="col-md-6">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required style="width: 1000px; height: 250px;"></textarea>
-                            <input type="submit" id="giveUsData">
-                        </div>
-                    </div>
-                </form>
-              
-
+                </div>
+                <div class="form-group row">
+                    <label for="message" class="col-sm-2 col-form-label col-form-label-sm">Message:</label>
+                      <textarea  type="message" class="form-control form-control-sm" id="message" placeholder="Type your message here">
+                        
+                    </textarea>
+                </div>
+                <input type="submit" id="giveUsData">
+            </form>
+        
+                  
 </div>
 </div>
 
