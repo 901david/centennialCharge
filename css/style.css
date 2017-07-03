@@ -33,16 +33,24 @@ body::before {
 }
 
 .topBottomBar {
-	height: 100px;
+	height: 120px;
 	margin-left: -15px;
 	margin-right: 0px;
 	background: #3d6794;
 }
 
 .tagline {
-	margin-left: -205px;
-	margin-top: none; 
+	/*margin-left: -800px;*/
+	text-align: left;
+	margin-top: -35px;
 	font-weight: none; 
+	font-size: 20px; 
+}
+
+.subtag {
+	/*margin-left: -1140px;*/
+	font-size: 20px;
+	text-align: left;
 }
 
 footer {
@@ -83,11 +91,17 @@ footer {
 	margin-top: -17px;
 	font-family: 'Allerta Stencil', sans-serif;
 	letter-spacing: 5px;	
+	/*margin-left: -124px;*/
+	text-align: left;
+}
+
+.navbar-nav {
+	margin-right: -110px;
 }
 
 .bubbles
 {
-	padding-top: 120px;
+	padding-top: 15px;
 	margin: auto;
 }
 

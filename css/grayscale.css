@@ -54,6 +54,7 @@ a:focus {
 }
 .navbar-custom {
   margin-bottom: 0;
+  margin-right: -110px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
