@@ -39,6 +39,12 @@ body::before {
 	background: #3d6794;
 }
 
+.tagline {
+	margin-left: -205px;
+	margin-top: none; 
+	font-weight: none; 
+}
+
 footer {
 	height: 25px;
 	background: grey;
