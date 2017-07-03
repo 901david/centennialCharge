@@ -85,11 +85,11 @@
 
             <div class="aboutBlock col-lg-12">
                 <div class="aboutPage">
-                    
-                      <form>
-                        <div class="form-group row">
+
+                  <form>
+                    <div class="form-group row">
                         <label for="name" class="col-sm-2 col-form-label col-form-label-sm">Name:</label>
-                          <div class="col-sm-10">
+                        <div class="col-sm-10">
                             <input type="name" class="form-control form-control-sm" id="name" placeholder="Name">
                         </div>
                     </div>
@@ -101,19 +101,54 @@
                 </div>
                 <div class="form-group row">
                     <label for="message" class="col-sm-2 col-form-label col-form-label-sm">Message:</label>
-                      <textarea  type="message" class="form-control form-control-sm" id="message" placeholder="Type your message here">
-                        
+                    <textarea  type="message" class="form-control form-control-sm" id="message" placeholder="Type your message here">
+
                     </textarea>
+
                 </div>
                 <input type="submit" id="giveUsData">
             </form>
-        
-                  
-</div>
-</div>
+
+
+        </div>
+    </div>
 
 </div>
+
 </header>
+<!-- Success MOdal -->
+<div id="showOverOrNot" class="displayNone">
+    <div id='overlay'></div>
+    <div id='modal'>
+      <div id='content'>
+          <p>Thanks!  We received your information</p>
+          <div class="btn btn-sm btn-success pull-right" id="closeThisThanks">Close</div>
+      </div>
+
+  </div>
+</div>
+<!-- Didnt fill out all fields modal -->
+<div id="notAllFields" class="displayNone">
+    <div id='overlay'></div>
+    <div id='modal'>
+      <div id='content'>
+          <p>Sorry, you didn't fill out all the fields.  Try Again!</p>
+          <div class="btn btn-sm btn-success pull-right" id="closeThisNotFill">Close</div>
+      </div>
+
+  </div>
+</div>
+<!-- Not valid email modal -->
+<div id="notValid" class="displayNone">
+    <div id='overlay'></div>
+    <div id='modal'>
+      <div id='content'>
+          <p>You did not enter a valid email address.  Try again!</p>
+          <div class="btn btn-sm btn-success pull-right" id="closeThisNoEmail">Close</div>
+      </div>
+
+  </div>
+</div>
 <footer></footer>
 
 <!-- jQuery -->
@@ -124,6 +159,9 @@
 
 <!-- Plugin JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
