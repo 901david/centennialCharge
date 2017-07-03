@@ -279,6 +279,15 @@ footer {
   border-radius:14px;
   padding:8px;
 }
+#modalMain {
+  position:absolute;
+  left:35%;
+  top:111%;
+  background:rgba(0,0,0,0.2);
+  border-radius:14px;
+  padding:8px;
+}
+
 
 #content {
   border-radius:8px;

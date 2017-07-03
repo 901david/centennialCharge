@@ -24,7 +24,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
     
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 
     <!-- Theme CSS -->
@@ -47,8 +47,8 @@
 
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-     <!-- Navigation -->
-     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+       <!-- Navigation -->
+       <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
@@ -90,7 +90,7 @@
 
 <!-- Intro Header -->
 <div class="container-fluid">
-   <header class="intro">
+ <header class="intro">
     <!-- <p class="headingFont" style= "font-family: 'Hammersmith One', sans-serif; font-size: 91px; color: white">CENTENNIAL CHARGE <a href="index.html"><p>🏠</p></a></p> -->
     <div class="row">
         <div class="col-md-10">
@@ -130,7 +130,7 @@
     
     <div id="commentBox" class="clear">
         <div class="col-lg-8 col-lg-offset-2" id="buttonSection">
-        <h1>Comments:</h1>
+            <h1>Comments:</h1>
             <input type="text" id="nameInput" placeholder="Enter name">
             <input type="text" id="commentInput" placeholder="Enter Comment">
             <button id="commentSubmission" class="btn btn-primary">Submit</button>
@@ -139,7 +139,18 @@
 
         </div>
     </div>
-    <footer></footer>
+    <!-- Not valid input modal -->
+    <div id="notValidInput" class="displayNone">
+        <div id='overlay'></div>
+        <div id='modalMain'>
+          <div id='content'>
+              <p>You did not fill out all the fields.  Try again!</p>
+              <div class="btn btn-sm btn-success pull-right" id="closeThisNoFields">Close</div>
+          </div>
+
+      </div>
+  </div>
+  <footer></footer>
 </div>
 
 <!-- jQuery -->
