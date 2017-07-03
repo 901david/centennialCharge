@@ -13,12 +13,15 @@ var databaseRefContact = firebase.database().ref("/contactUs");
 
 $(document).ready(function(){
 	$("#giveUsData").click(function (event) {
-		var nameVal = $("#name").val();
-		var emailVal = $("#email").val();
-		var messageVal = $("#message").val();
-		console.log(nameVal);
-		console.log(emailVal);
-		console.log(messageVal);
+		event.preventDefault();
+		var nameVal = $("#name").val().trim();
+		var emailVal = $("#email").val().trim();
+		var messageVal = $("#message").val().trim();
+		if ((nameVal === "") || (emailVal === "") || (messageVal === "")) {
+			// insert modal here
+			alert("you did not fill out all the fields");
+		}
+		else if ((emailVal.includes("@")) && (emailVal.includes("."))){
 		$("#name").val("");
 		$("#email").val("");
 		$("#message").val("");
@@ -29,6 +32,12 @@ $(document).ready(function(){
 			message: messageVal
 		});
 		alert("We received your message");
+		}
+		else {
+			// insert modal here
+			alert("You did not insert a valid email.");
+		}
+		
 		
 		
 		
