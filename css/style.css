@@ -86,12 +86,20 @@ footer {
 	color: black;
 	display: inline-block;
 	background-color: white;
-	width: 250px;
-	height:80px;
+	width: 260px;
+	height:140px;
 	opacity: .8;
 	padding:8px;
 	border-radius: 25px;
+	font-weight: bold;
 	}
+
+#headingSub {
+	
+	font-size: 15px;
+	padding-top: 7px;
+	font-style: italic;
+}
 
 .mainHeader{
 	font-size: 60px;
