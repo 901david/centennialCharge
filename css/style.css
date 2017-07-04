@@ -27,6 +27,14 @@ body::before {
 	z-index: -1;
 }
 
+.navTitle {
+	padding-left: 10px;
+}
+
+.navCustomPos {
+	padding-right: 120px;
+}
+
 .headingFont {
 	font-family: 'Raleway', sans-serif;
 ;
