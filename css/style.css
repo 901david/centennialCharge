@@ -261,6 +261,7 @@ footer {
 }
 #commentBox h1 {
 	margin-top: 15px;
+	overflow: hidden;
 }
 #overlay {
   position: fixed; 
@@ -309,4 +310,24 @@ footer {
 .displayNone {
 	display: none;
 }
-
+#commentHeader {
+	font-size: 36px;
+	font-weight: 700;
+}
+@media screen and (max-width: 767px) {
+	#commentInput {
+		width: 200px;
+	}
+}
+@media screen and (max-width: 460px) {
+	#commentInput {
+		width: 100px;
+	}
+	#nameInput {
+		width: 100px;
+	}
+	#commentHeader {
+	font-size: 16px;
+	font-weight: 700;
+}
+}

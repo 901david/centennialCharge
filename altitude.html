@@ -128,14 +128,16 @@
 
     </div>
     
-    <div id="commentBox" class="clear">
-        <div class="col-lg-8 col-lg-offset-2" id="buttonSection">
-            <h1>Comments:</h1>
+    <div id="commentBox" class="col-xs-12 col-sm-12 col-md-8 col-offset-md-2 col-lg-8 col-offset-lg-2">
+        <div id="buttonSection">
+            <p  id="commentHeader">Comments:</p>
             <input type="text" id="nameInput" placeholder="Enter name">
-            <input type="text" id="commentInput" placeholder="Enter Comment">
+            <textarea  type="text" class="form-control form-control-sm" id="commentInput" placeholder="Type your comment here">
+
+            </textarea>
             <button id="commentSubmission" class="btn btn-primary">Submit</button>
         </div>
-        <div class="col-lg-10 col-lg-offset-1" id="commentSection">
+        <div id="commentSection">
 
         </div>
     </div>
