@@ -313,6 +313,7 @@ footer {
   position:absolute;
   left:35%;
   top:111%;
+  /*margin: 0 auto;*/
   background:rgba(0,0,0,0.2);
   border-radius:14px;
   padding:8px;
@@ -321,6 +322,7 @@ footer {
 
 #content {
   border-radius:8px;
+  color: black;
   background:#fff;
   padding:20px;
   overflow: hidden;
@@ -348,6 +350,7 @@ footer {
 #slightlyOff {
 	margin-right: 16px;
 }
+
 @media screen and (max-width: 1813px) {
 	#message {
 	max-width: 800px;
