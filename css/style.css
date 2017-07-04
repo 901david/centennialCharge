@@ -176,6 +176,7 @@ footer {
 		width:80% !important;
 		margin-right: 10%;
 		margin-left: 10%;
+		padding:15px;
 	}
 	#newsHolder a:link{
 		color:black;
@@ -358,6 +359,7 @@ footer {
 #slightlyOff {
 	margin-right: 16px;
 }
+
 
 @media screen and (max-width: 1813px) {
 	#message {
