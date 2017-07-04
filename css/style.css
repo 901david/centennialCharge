@@ -65,8 +65,9 @@ footer {
 	display: inline-block;
 	background-color: white;
 	width: 250px;
-	height: 63px;
+	height:80px;
 	opacity: .8;
+	padding:8px;
 	border-radius: 25px;
 	}
 
