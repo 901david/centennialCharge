@@ -342,6 +342,27 @@ footer {
 	font-size: 36px;
 	font-weight: 700;
 }
+#message {
+	max-width: 1126px;
+}
+#slightlyOff {
+	margin-right: 16px;
+}
+@media screen and (max-width: 1813px) {
+	#message {
+	max-width: 800px;
+}
+}
+@media screen and (max-width: 1338px) {
+	#message {
+	max-width: 600px;
+}
+}
+@media screen and (max-width: 1032px) {
+	#message {
+	max-width: 400px;
+}
+}
 @media screen and (max-width: 767px) {
 	#commentInput {
 		width: 200px;
