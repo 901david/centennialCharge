@@ -41,7 +41,7 @@ $(document).ready(function(){
   $("#commentSection").empty();
   console.log(snapshot.val());
   var sortedCommentsFromValueSnapshot = sortComments(snapshot.val());
-  
+
   sortedCommentsFromValueSnapshot.forEach(child => createCommentSection(child));
 });
 
@@ -71,7 +71,7 @@ $(document).ready(function(){
 
 function createCommentSection(snapshot)
 {
-  $("#commentSection").append("<div class='well col-lg-12 flipInX animated'><p><strong>" + snapshot.name + "</strong><em> has this to say about this page:</em></p><br><p>" + snapshot.comment + "</p><br/><br/><br/><div id='likeButt" + snapshot.key + "' class='btn btn-success likeButt' data-snapKey='" + snapshot.key + "'>Like</div>" + "   " + "<span class='someSpace'>" + snapshot.likes + "</span><div id='dislikeButt" + snapshot.key + "' class='btn btn-danger dislikeButt' data-snapKey='" + snapshot.key + "'>Dislike</div>" + "   " +  "<span class='someSpace'>" + snapshot.dislikes + "</span></div>");
+  $("#commentSection").append("<div class='well col-xs-12 col-sm-12 col-md-12 col-lg-12 flipInX animated'><p><strong>" + snapshot.name + "</strong><em> has this to say about this page:</em></p><br><p>" + snapshot.comment + "</p><br/><br/><br/><div id='likeButt" + snapshot.key + "' class='btn btn-success likeButt' data-snapKey='" + snapshot.key + "'>Like</div>" + "   " + "<span class='someSpace'>" + snapshot.likes + "</span><div id='dislikeButt" + snapshot.key + "' class='btn btn-danger dislikeButt' data-snapKey='" + snapshot.key + "'>Dislike</div>" + "   " +  "<span class='someSpace'>" + snapshot.dislikes + "</span></div>");
 
   $("#likeButt" + snapshot.key).click(function()
   {
