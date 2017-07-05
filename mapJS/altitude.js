@@ -1,41 +1,56 @@
 function initMap() {
-  var map = new google.maps.Map($("#altitudeMap"), {
-    zoom: 8,
-          center: {lat: 38.8409, lng: -105.0},  // Pikes Peak.
-          left: {lat: 39.1178, lng: -106.4},  //Mount Elbert.
-          right: {lat: 39.5883, lng: -105.6},  //mount Evans.
-          mapTypeId: 'terrain'
-  });
-  var elevator = new google.maps.ElevationService;
-  var infowindow = new google.maps.InfoWindow({map: map});
 
-  // Add a listener for the click event. Display the elevation for the LatLng of
-  // the click inside the infowindow.
-  map.addListener('click', function(event) {
-    displayLocationElevation(event.latLng, elevator, infowindow);
-  });
-}
-
-function displayLocationElevation(location, elevator, infowindow) {
-  // Initiate the location request
-  elevator.getElevationForLocations({
-    'locations': [location]
-  }, function(results, status) {
-    infowindow.setPosition(location);
-    if (status === 'OK') {
-      // Retrieve the first result
-      if (results[0]) {
-        // Open the infowindow indicating the elevation at the clicked position.
-        infowindow.setContent('The elevation at this point <br>is ' +
-            results[0].elevation + ' meters.');
-      } else {
-        infowindow.setContent('No results found');
-      }
-    } else {
-      infowindow.setContent('Elevation service failed due to: ' + status);
-    }
-  });
-}
-
-
-      
+   var broadway = {
+     info: '<strong>Chipotle on Broadway</strong><br>\
+          5224 N Broadway St<br> Chicago, IL 60640<br>\
+          <a href="https://goo.gl/maps/jKNEDz4SyyH2">Get Directions</a>',
+    lat: 41.976816,
+    long: -87.659916
+   };
+ 
+   var belmont = {
+     info: '<strong>Chipotle on Belmont</strong><br>\
+           1025 W Belmont Ave<br> Chicago, IL 60657<br>\
+           <a href="https://goo.gl/maps/PHfsWTvgKa92">Get Directions</a>',
+     lat: 41.939670,
+     long: -87.655167
+   };
+ 
+   var sheridan = {
+     info: '<strong>Chipotle on Sheridan</strong><br>\r\
+           6600 N Sheridan Rd<br> Chicago, IL 60626<br>\
+          <a href="https://goo.gl/maps/QGUrqZPsYp92">Get Directions</a>',
+     lat: 42.002707,
+     long: -87.661236
+   };
+ 
+   var locations = [
+       [broadway.info, broadway.lat, broadway.long, 0],
+       [belmont.info, belmont.lat, belmont.long, 1],
+       [sheridan.info, sheridan.lat, sheridan.long, 2],
+     ];
+ 
+   var map = new google.maps.Map(document.getElementById("mapBox"), {
+     zoom: 13,
+     center: new google.maps.LatLng(41.976816, -87.659916),
+     mapTypeId: google.maps.MapTypeId.ROADMAP
+   });
+ 
+   var infowindow = new google.maps.InfoWindow({});
+ 
+   var marker, i;
+ 
+   for (i = 0; i < locations.length; i++) {
+     marker = new google.maps.Marker({
+       position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+       map: map
+     });
+ 
+     google.maps.event.addListener(marker, 'click', (function (marker, i) {
+       return function () {
+         infowindow.setContent(locations[i][0]);
+         infowindow.open(map, marker);
+       }
+     })(marker, i));
+   }
+ }
