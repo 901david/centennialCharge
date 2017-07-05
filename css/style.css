@@ -61,6 +61,12 @@ body::before {
 	text-align: left;
 }
 
+#coloradoMemes12 {
+	float: left;
+	height: 385px;
+	padding: 15px 20px 20px 10px;
+	}
+
 footer {
 	height: 25px;
 	background: grey;
@@ -128,23 +134,29 @@ footer {
 	background-color: white;
 	color: black;
 	width: 80%;
+	height: 450px; 
 	border-radius: 10px;
 	margin: auto;
 	padding: 31px;
+	clear: both;
 }
 
 .aboutText {
-	padding-top: 10px;
-	font-size: 55px;
+	padding-top: 5px;
+	font-size: 45px;
 	text-shadow: 1px 1px black
 }
 
 .textInAbout {
-	font-size: 26px;
+	font-size: 20px;
 	font-family: 'Josefin Sans', sans-serif;
+	text-align: left;
+
 }
 
-
+/*.row {
+	clear:both;
+}*/
 	.snippet {
 			font-size: 10px;
 		}
