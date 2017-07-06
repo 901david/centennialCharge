@@ -15,7 +15,7 @@ body
 	background-color: transparent;
 }
 
-body::before {
+/*body::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -25,7 +25,7 @@ body::before {
 	height: 100%;
 	background: rgba(255, 255, 255, 0.3);
 	z-index: -1;
-}
+}*/
 
 .navTitle {
 	padding-left: 10px;
@@ -180,17 +180,14 @@ footer {
 	}
 	#newsHolder {
 		overflow: hidden;
-		margin-bottom:25px;
+		margin-left: 8%;
 		border: 5px 0 5px 0;
 		border-color: black;
 		background-color: white;
 		opacity:0.9;
 		border-radius: 10px;
-		width:80% !important;
-		margin-right: 10%;
-		margin-left: 10%;
 		padding:15px;
-		margin-top: 5%;
+		margin-bottom: 5%;
 	}
 	#newsHolder a:link{
 		color:black;
@@ -223,12 +220,12 @@ footer {
 
 
 .articleBox {
-	opacity: .9;
 	background-color: white;
 	color: black;
 	border-radius: 10px;
 	padding-left: 10px;
 	text-align: left;
+	margin-top: 2%;
 	
 }
 .articleBox p {
@@ -241,14 +238,10 @@ footer {
 	opacity: .9;
 	background-color: white;
 	color: black;
-	width: 50%;
 	overflow: hidden;
 	border-radius: 10px;
 	padding-left: 10px;
 	text-align: left;
-	margin-left: 25%;
-	margin-right: 25%;
-	margin-bottom: 5%;
 }
 .clear {
 	clear:both;
@@ -365,6 +358,15 @@ footer {
 #map {
 	margin:0 !important;
 }
+#thisHoldsTheFun {
+	margin-top: 2%;
+	margin-left:0;
+	margin-right: 0;
+	padding: 0;
+}
+#bottomHolder {
+	padding:0;
+}
 @media screen and (max-width: 1813px) {
 	#message {
 	max-width: 800px;
@@ -379,6 +381,11 @@ footer {
 	#message {
 	max-width: 400px;
 }
+}
+@media screen and (max-width: 767px) {
+.topBottomBar {
+	display: none;
+	}
 }
 @media screen and (max-width: 767px) {
 	#commentInput {
@@ -397,4 +404,10 @@ footer {
 	font-weight: 700;
 }
 
+#mapBox {
+	height: 500px;
+	width: 500px;
+}
 
+.articleImage {
+}
