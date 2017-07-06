@@ -190,6 +190,7 @@ footer {
 		margin-right: 10%;
 		margin-left: 10%;
 		padding:15px;
+		margin-top: 5%;
 	}
 	#newsHolder a:link{
 		color:black;
@@ -222,32 +223,19 @@ footer {
 
 
 .articleBox {
-	display: block center;
 	opacity: .9;
 	background-color: white;
 	color: black;
-	width: 60%;
 	border-radius: 10px;
 	padding-left: 10px;
 	text-align: left;
-	margin-left: 52px;
+	
 }
 .articleBox p {
 	margin-left: 10px;
 	margin-right: 10px;
 }
 
-.mapBox {
-	display: inline-block;
-	background-color: white;
-	color: black;
-	width: 208%;
-	border-radius: 10px;
-	position: absolute;
-	left: -373px;
-	top: 165px;
-
-}
 #commentBox {
 	display: block center;
 	opacity: .9;
@@ -374,7 +362,9 @@ footer {
 	margin-right: 16px;
 }
 
-
+#map {
+	margin:0 !important;
+}
 @media screen and (max-width: 1813px) {
 	#message {
 	max-width: 800px;
