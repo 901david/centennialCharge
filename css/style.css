@@ -406,4 +406,8 @@ footer {
 	font-size: 16px;
 	font-weight: 700;
 }
+
+#mapBox {
+	height: 500px;
+	width: 500px;
 }
