@@ -217,6 +217,10 @@ footer {
  padding-left: 10px;
  text-align: left;
 }
+#linkChange h3 {
+	color:#3D6794;
+}
+
 
 
 .articleBox {
@@ -383,6 +387,7 @@ footer {
 	max-width: 400px;
 }
 }
+
 @media screen and (max-width: 767px) {
 .topBottomBar {
 	display: none;
