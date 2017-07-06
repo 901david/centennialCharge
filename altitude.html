@@ -12,6 +12,7 @@
     <title>Centennial Charge - 5 Places To Get Altitude Sickness</title>
 
     <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
@@ -97,13 +98,15 @@
 <!-- Intro Header -->
 <div class="container">
  <header class="intro">
-    <!-- <p class="headingFont" style= "font-family: 'Hammersmith One', sans-serif; font-size: 91px; color: white">CENTENNIAL CHARGE <a href="index.html"><p>🏠</p></a></p> -->
+
+    <!--the big container for the article-->
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 articleBox">
 
             <h1 class="aboutText">Places to Go In Colorado If You Want Altitude Sickness</h1>
 
             <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+            <img class="articleImage img-responsive" src="http://i.imgur.com/piWMCT2.jpg">
                 <p>Altitude sickness is something that affects us all. If you're looking for some of the best places to get this specific ailment, then you're in the right spot. Getting sick from lack of oxygen is a unique and dizzying feeling is something that people all around the world seek out. Check out our top three destinations for where to get sick in the Cenntial State!</p>
                 <h1>Pike's Peak</h1>
                 <p>Pike's Peak boasts the highest peak of the Southern Range of the Rocky Mountains. We decieded to start off our list with this guy because he has an extreme elevation of over 14,000 feet above sea level. That's higher than airplanes fly! If you want to get that dizzying feeling at takeoff, complete with swolllen ankles and lack of bloodflow, then come on down to Colorado Springs' Pike Peak.</p>
@@ -124,30 +127,25 @@
 
 
             </div>
-              <div id="mapBox" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+            <!--map api location-->
+               <div id="mapBox" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <div id="map">
-               
+        
             </div>
         </div>
+        
 
-        </div>
-      
-        </div>
-
-    </header>
-    <div id="newsHolder" class="col-xs-8 col-xs-offsset-2 col-sm-8 sol-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-
-        <img id="leftButt" class="col-xs-8 col-sm-3 sol-md-1 col-lg-1 img-responsive" src="img/leftarrow.png">
-
-        <div id="testArea" class="center-block">
-        </div>
-
-        <img id="rightButt" class="col-xs-8 col-sm-3 col-md-1 col-lg-1 img-responsive" src="img/rightarrow.png">
-
-
-    </div>
     
-    <div id="commentBox" class="col-xs-12 col-sm-12 col-md-8 col-offset-md-2 col-lg-8 col-offset-lg-2">
+    </header>
+    </div>
+    </div>
+    <div class="container" id="bottomHolder">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="thisHoldsTheFun">
+
+    <!--comment box location-->
+
+    <div id="commentBox" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <div id="buttonSection">
             <p  id="commentHeader">Comments:</p>
             <input type="text" id="nameInput" placeholder="Enter name">
@@ -159,6 +157,24 @@
         <div id="commentSection">
 
         </div>
+    </div>
+
+    <!--news api for articles from other sites called here-->
+
+    <div id="newsHolder" class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+
+        <img id="leftButt" class="col-lg-1 img-responsive" src="img/leftarrow.png">
+
+        <div id="testArea" class="center-block">
+        </div>
+
+        <img id="rightButt" class="col-lg-1 img-responsive" src="img/rightarrow.png">
+
+
+    </div>
+    
+    
+    </div>
     </div>
     <!-- Not valid input modal -->
     <div id="notValidInput" class="displayNone">
@@ -176,6 +192,10 @@
 
 
     <!-- Intro Header -->
+
+    <!--do we delete this header area? I think it's irrelvant-->
+
+    <!--
     <div class="container-fluid">
        <header class="intro">
             <p class="headingFont" style= "font-family: 'Hammersmith One', sans-serif; font-size: 91px; color: white">CENTENNIAL CHARGE <a href="index.html"><p>🏠</p></a></p>
@@ -184,6 +204,7 @@
                 </div>
                 </header>
                 <footer></footer>
+    -->
 
 <!-- jQuery -->
 <script src="vendor/jquery/jquery.js"></script>
@@ -196,7 +217,8 @@
 <script src="mapJS/altitude.js"></script>
 
 <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoHyB5pTrRekau2_Kb9aOlYIwjLwXkOBY&callback=initMap"></script>
+<script 
+                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoHyB5pTrRekau2_Kb9aOlYIwjLwXkOBY&callback=initMap"></script>
 
 
 <!-- Theme JavaScript -->

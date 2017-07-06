@@ -12,8 +12,8 @@ var databaseRef = firebase.database().ref(pageValue);
 var userName;
 var userComment;
 $(document).ready(function(){
-
  $("#commentSubmission").click(function () {
+
   userName = $("#nameInput").val().trim();
   userComment = $("#commentInput").val().trim();
   if ((userName === "") || (userComment === "")) {
