@@ -224,7 +224,6 @@ footer {
 
 
 .articleBox {
-	opacity: .9;
 	background-color: white;
 	color: black;
 	border-radius: 10px;
@@ -415,6 +414,5 @@ footer {
 	width: 500px;
 }
 
-.bottomLinks {
-	
+.articleImage {
 }
