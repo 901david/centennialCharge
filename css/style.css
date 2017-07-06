@@ -408,6 +408,19 @@ footer {
 	font-size: 16px;
 	font-weight: 700;
 }
+}
+@media screen and (max-width: 443px) {
+	.mainHeader {
+		margin-top: 1%;
+		font-size: 40px;
+	}
+}
+@media screen and (max-width: 316px) {
+	.mainHeader {
+		margin-top: 1%;
+		font-size: 30px;
+	}
+}
 
 #mapBox {
 	height: 500px;
