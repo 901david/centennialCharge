@@ -15,7 +15,7 @@ body
 	background-color: transparent;
 }
 
-body::before {
+/*body::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -25,7 +25,7 @@ body::before {
 	height: 100%;
 	background: rgba(255, 255, 255, 0.3);
 	z-index: -1;
-}
+}*/
 
 .navTitle {
 	padding-left: 10px;
@@ -135,11 +135,14 @@ footer {
 	background-color: white;
 	color: black;
 	width: 80%;
-	height: 450px; 
+	height: auto; 
 	border-radius: 10px;
 	margin: auto;
 	padding: 31px;
-	
+
+/*	clear: both;
+	overflow:hidden;*/
+
 }
 
 .aboutText {
@@ -149,7 +152,7 @@ footer {
 }
 
 .textInAbout {
-	font-size: 20px;
+	font-size: 30px;
 	font-family: 'Josefin Sans', sans-serif;
 	text-align: left;
 
@@ -180,16 +183,14 @@ footer {
 	}
 	#newsHolder {
 		overflow: hidden;
-		margin-bottom:25px;
+		margin-left: 8%;
 		border: 5px 0 5px 0;
 		border-color: black;
 		background-color: white;
 		opacity:0.9;
 		border-radius: 10px;
-		width:80% !important;
-		margin-right: 10%;
-		margin-left: 10%;
 		padding:15px;
+		margin-bottom: 5%;
 	}
 	#newsHolder a:link{
 		color:black;
@@ -219,47 +220,36 @@ footer {
  padding-left: 10px;
  text-align: left;
 }
+#linkChange h3 {
+	color:#3D6794;
+}
+
 
 
 .articleBox {
-	display: block center;
-	opacity: .9;
 	background-color: white;
 	color: black;
-	width: 60%;
 	border-radius: 10px;
 	padding-left: 10px;
 	text-align: left;
-	margin-left: 52px;
+	margin-top: 2%;
+	overflow: hidden;
+	
 }
 .articleBox p {
 	margin-left: 10px;
 	margin-right: 10px;
 }
 
-.mapBox {
-	display: inline-block;
-	background-color: white;
-	color: black;
-	width: 208%;
-	border-radius: 10px;
-	position: absolute;
-	left: -373px;
-	top: 165px;
-
-}
 #commentBox {
 	display: block center;
 	opacity: .9;
 	background-color: white;
 	color: black;
-	width: 50%;
 	overflow: hidden;
 	border-radius: 10px;
 	padding-left: 10px;
 	text-align: left;
-	margin-left: 25%;
-	margin-right: 25%;
 }
 .clear {
 	clear:both;
@@ -373,7 +363,23 @@ footer {
 	margin-right: 16px;
 }
 
-
+#map {
+	margin:0 !important;
+}
+#thisHoldsTheFun {
+	margin-top: 2%;
+	margin-left:0;
+	margin-right: 0;
+	padding: 0;
+}
+#bottomHolder {
+	padding:0;
+}
+.articleImage {
+	max-width: 50%;
+	max-height: 50%;
+	margin-left: 20%;
+}
 @media screen and (max-width: 1813px) {
 	#message {
 	max-width: 800px;
@@ -388,6 +394,12 @@ footer {
 	#message {
 	max-width: 400px;
 }
+}
+
+@media screen and (max-width: 767px) {
+.topBottomBar {
+	display: none;
+	}
 }
 @media screen and (max-width: 767px) {
 	#commentInput {
@@ -405,4 +417,16 @@ footer {
 	font-size: 16px;
 	font-weight: 700;
 }
+}
+@media screen and (max-width: 443px) {
+	.mainHeader {
+		margin-top: 1%;
+		font-size: 40px;
+	}
+}
+@media screen and (max-width: 316px) {
+	.mainHeader {
+		margin-top: 1%;
+		font-size: 30px;
+	}
 }
