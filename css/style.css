@@ -180,17 +180,14 @@ footer {
 	}
 	#newsHolder {
 		overflow: hidden;
-		margin-bottom:25px;
+		margin-left: 8%;
 		border: 5px 0 5px 0;
 		border-color: black;
 		background-color: white;
 		opacity:0.9;
 		border-radius: 10px;
-		width:80% !important;
-		margin-right: 10%;
-		margin-left: 10%;
 		padding:15px;
-		margin-top: 5%;
+		margin-bottom: 5%;
 	}
 	#newsHolder a:link{
 		color:black;
@@ -228,6 +225,7 @@ footer {
 	border-radius: 10px;
 	padding-left: 10px;
 	text-align: left;
+	margin-top: 2%;
 	
 }
 .articleBox p {
@@ -240,14 +238,10 @@ footer {
 	opacity: .9;
 	background-color: white;
 	color: black;
-	width: 50%;
 	overflow: hidden;
 	border-radius: 10px;
 	padding-left: 10px;
 	text-align: left;
-	margin-left: 25%;
-	margin-right: 25%;
-	margin-bottom: 5%;
 }
 .clear {
 	clear:both;
@@ -363,6 +357,15 @@ footer {
 
 #map {
 	margin:0 !important;
+}
+#thisHoldsTheFun {
+	margin-top: 2%;
+	margin-left:0;
+	margin-right: 0;
+	padding: 0;
+}
+#bottomHolder {
+	padding:0;
 }
 @media screen and (max-width: 1813px) {
 	#message {
