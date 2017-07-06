@@ -134,11 +134,12 @@ footer {
 	background-color: white;
 	color: black;
 	width: 80%;
-	height: 450px; 
+	height: auto; 
 	border-radius: 10px;
 	margin: auto;
 	padding: 31px;
 	clear: both;
+	overflow:hidden;
 }
 
 .aboutText {
