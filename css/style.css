@@ -371,6 +371,11 @@ footer {
 #bottomHolder {
 	padding:0;
 }
+.articleImage {
+	max-width: 50%;
+	max-height: 50%;
+	margin-left: 20%;
+}
 @media screen and (max-width: 1813px) {
 	#message {
 	max-width: 800px;
@@ -420,12 +425,4 @@ footer {
 		margin-top: 1%;
 		font-size: 30px;
 	}
-}
-
-#mapBox {
-	height: 500px;
-	width: 500px;
-}
-
-.articleImage {
 }
