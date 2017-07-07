@@ -15,18 +15,6 @@ body
 	background-color: transparent;
 }
 
-/*body::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	background: rgba(255, 255, 255, 0.3);
-	z-index: -1;
-}*/
-
 .navTitle {
 	padding-left: 10px;
 }
@@ -42,17 +30,18 @@ body
 
 .topBottomBar {
 	height: 120px;
-	margin-left: -15px;
-	margin-right: 0px;
+	width: 100%;
 	background: #3d6794;
+	/*position: fixed;*/
+	/*top:10px;*/
+
 }
 
 .tagline {
-	/*margin-left: -800px;*/
-	text-align: left;
-	margin-top: -35px;
 	font-weight: none; 
-	font-size: 20px; 
+	font-size: 20px;
+	margin:0; 
+	color:white;
 }
 
 .subtag {
@@ -114,14 +103,10 @@ footer {
 	float: left;
 	margin-top: -17px;
 	font-family: 'Allerta Stencil', sans-serif;
-	letter-spacing: 5px;	
-	/*margin-left: -124px;*/
-	text-align: left;
+	letter-spacing: 5px;
+	color:white;
 }
 
-.navbar-nav {
-	margin-right: -110px;
-}
 
 .bubbles
 {
@@ -192,10 +177,6 @@ footer {
 		margin-bottom: 5%;
 	}
 	#newsHolder a:link{
-		color:black;
-
-	}
-	#newsHolder a:visited{
 		color:black;
 
 	}
@@ -324,7 +305,6 @@ footer {
   position:absolute;
   left:35%;
   top:111%;
-  /*margin: 0 auto;*/
   background:rgba(0,0,0,0.2);
   border-radius:14px;
   padding:8px;
@@ -391,6 +371,39 @@ footer {
 	max-width: 50%;
 	max-height: 50%;
 	margin-left: 20%;
+}
+#navBarLargeTop {
+	padding-bottom: 10px;
+	background-color: #3D6794;
+	overflow:hidden;
+}
+#navBarLargeScroll {
+	position:fixed;
+	padding-bottom: 10px;
+	background-color: black;
+	overflow:hidden;
+	z-index: 1000;
+}
+.navLinks {
+	margin-top: 2%;
+
+}
+.navLinks a {
+	color:white;
+}
+#navBarLargeTop a:link {
+	color:white;
+	text-decoration: none;
+
+}
+#navBarLargeTop a:hover {
+	color:white;
+	text-decoration: none;
+
+}
+#navBarLargeTop a:visited {
+	color:white;
+	text-decoration: none;
 }
 @media screen and (max-width: 1813px) {
 	#message {
