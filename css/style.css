@@ -64,7 +64,7 @@ body
 #coloradoMemes12 {
 	float: left;
 	height: 385px;
-	padding: 15px 20px 20px 10px;
+	padding: 15px 20px 0px 0px;
 	}
 
 footer {
@@ -129,7 +129,7 @@ footer {
 	margin: auto;
 }
 
-.aboutPage {
+.articleDiv {
 	display: block center;
 	opacity: .9;
 	background-color: white;
@@ -140,19 +140,18 @@ footer {
 	margin: auto;
 	padding: 31px;
 
-/*	clear: both;
-	overflow:hidden;*/
-
+/*	clear: both;*/
+	overflow:hidden;
 }
 
-.aboutText {
+.headerText {
 	padding-top: 5px;
 	font-size: 45px;
 	text-shadow: 1px 1px black
 }
 
 .textInAbout {
-	font-size: 30px;
+	/*font-size: 30px;*/
 	font-family: 'Josefin Sans', sans-serif;
 	text-align: left;
 
@@ -366,14 +365,27 @@ footer {
 #map {
 	margin:0 !important;
 }
+
+#map{
+	float: right;
+}
 #thisHoldsTheFun {
 	margin-top: 2%;
 	margin-left:0;
 	margin-right: 0;
 	padding: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: left;
 }
 #bottomHolder {
 	padding:0;
+	width: 80%;
+    /*height: 200px;*/
+    /*border: 1px solid #c3c3c3;*/
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-flow: row-reverse wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-flow: row-reverse wrap;
 }
 .articleImage {
 	max-width: 50%;
