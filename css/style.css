@@ -43,6 +43,9 @@ body
 	font-size: 20px;
 	margin:0; 
 	color:white;
+	position: absolute;
+	left: 16px;
+	top: 86px;
 }
 
 .subtag {
@@ -459,3 +462,32 @@ footer {
 		font-size: 30px;
 	}
 }
+
+
+header{
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+  #masthead{
+     position: fixed;
+  z-index: 99;
+  width: 100%;
+  margin: 0 0 30px;
+  overflow: auto;
+  color: #3d6794;
+  background: #3d6794;
+  border-bottom: 2px solid #ccc;
+  }
+
+  #logo{
+    width: 278px;
+    margin-left: 47px;
+  }
+  nav{
+
+  }
+
+  a{
+  	color: #96a9be;
+
+  }
