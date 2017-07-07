@@ -32,6 +32,7 @@ body
 	height: 120px;
 	width: 100%;
 	background: #3d6794;
+	z-index: -1;
 	/*position: fixed;*/
 	/*top:10px;*/
 
@@ -368,9 +369,12 @@ footer {
     flex-flow: row-reverse wrap;
 }
 .articleImage {
-	max-width: 50%;
-	max-height: 50%;
-	margin-left: 20%;
+	width: 300px;
+	/*max-height: 50%;*/
+	/*margin-left: 20%;*/
+	float: left;
+
+	padding: 15px 20px 0px 0px;
 }
 #navBarLargeTop {
 	padding-bottom: 10px;
