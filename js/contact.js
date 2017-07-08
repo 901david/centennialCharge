@@ -12,6 +12,7 @@ firebase.initializeApp(config);
 var databaseRefContact = firebase.database().ref("/contactUs");
 
 $(document).ready(function(){
+	
 	$("#giveUsData").click(function (event) {
 		event.preventDefault();
 		var nameVal = $("#name").val().trim();
