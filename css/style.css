@@ -473,6 +473,12 @@ footer {
 	}
 }
 
+.navbar-nav {
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif
+    
+}
+
 
 header{
     margin-bottom: 20px;
