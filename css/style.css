@@ -43,9 +43,8 @@ body
 	font-size: 20px;
 	margin:0; 
 	color:white;
-	position: absolute;
-	left: 16px;
-	top: 86px;
+	white-space: nowrap;
+	
 }
 
 .subtag {
@@ -102,10 +101,7 @@ footer {
 
 .mainHeader{
 	font-size: 60px;
-	color: #f4dc42; 
-	position: relative;
-	float: left;
-	margin-top: -17px;
+	white-space: nowrap;
 	font-family: 'Allerta Stencil', sans-serif;
 	letter-spacing: 5px;
 	color:white;
@@ -146,9 +142,7 @@ footer {
 
 }
 
-/*.row {
-	clear:both;
-}*/
+
 	.snippet {
 			font-size: 10px;
 		}
@@ -365,8 +359,6 @@ footer {
 }
 .articleImage {
 	width: 300px;
-	/*max-height: 50%;*/
-	/*margin-left: 20%;*/
 	float: left;
 
 	padding: 15px 20px 0px 0px;
@@ -376,15 +368,8 @@ footer {
 	background-color: #3D6794;
 	overflow:hidden;
 }
-#navBarLargeScroll {
-	position:fixed;
-	padding-bottom: 10px;
-	background-color: black;
-	overflow:hidden;
-	z-index: 1000;
-}
 .navLinks {
-	margin-top: 2%;
+	margin-top: 35px;
 
 }
 .navLinks a {
@@ -403,6 +388,9 @@ footer {
 #navBarLargeTop a:visited {
 	color:white;
 	text-decoration: none;
+}
+#mapBox {
+	height:300px;
 }
 @media screen and (max-width: 1813px) {
 	#message {
@@ -424,11 +412,31 @@ footer {
 .topBottomBar {
 	display: none;
 	}
-}
-@media screen and (max-width: 767px) {
-	#commentInput {
+#commentInput {
 		width: 200px;
 	}
+.mainHeader {
+		margin-top: 1%;
+		font-size: 40px;
+	}
+.navLinks a {
+	text-align: center;
+}
+.tagline {
+	text-align: center;
+}
+.laterCenter {
+	text-align: center;
+}
+
+}
+@media screen and (max-width: 597px) {
+.tagline {
+	white-space: normal;
+}
+.mainHeader {
+	white-space: normal;
+}
 }
 @media screen and (max-width: 460px) {
 	#commentInput {
