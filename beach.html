@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-   
+
     <link href="css/business-frontpage.css" rel="stylesheet">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
@@ -66,10 +66,10 @@
             </ul>
         </div>      
     </div>
-   
+
     <!-- Intro Header -->
     <div class="container">
-     <header class="intro">
+       <header class="intro">
         <!-- <p class="headingFont" style= "font-family: 'Hammersmith One', sans-serif; font-size: 91px; color: white">CENTENNIAL CHARGE <a href="index.html"><p>🏠</p></a></p> -->
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 articleBox">
@@ -101,67 +101,67 @@
 
                         These are some other beaches in Colorado.
 
-                            <a href="http://www.onlyinyourstate.com/colorado/colorado-beaches/"><h3>3. 10 Little Known Beaches That'll Make Your Summer Unforgettable</h3></a>
-                            
-                            I mean, seriously. Do you really want to visit a beach in Colorado? Fine. Take these 10. Apparently you'll have an unforgettable summer at them. (Not like you wouldn't in SoCal, but whatever, what do we know...)
+                        <a href="http://www.onlyinyourstate.com/colorado/colorado-beaches/"><h3>3. 10 Little Known Beaches That'll Make Your Summer Unforgettable</h3></a>
 
-                            <br>
-                        </p>
+                        I mean, seriously. Do you really want to visit a beach in Colorado? Fine. Take these 10. Apparently you'll have an unforgettable summer at them. (Not like you wouldn't in SoCal, but whatever, what do we know...)
+
+                        <br>
+                    </p>
+                </div>
+
+
+                <!--map api goes here-->
+                <div class="col-md-2" id="mapSize">
+                    <div id="mapBox">
+                        <img src="http://via.placeholder.com/300x300">
                     </div>
-                 
-
-            <!--map api goes here-->
-            <div id="mapBox" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-            <div id="map">
-        
-
-            </div>
-            </div>
-            
-        </header>
-
-    </div>
-
-    <!--comment boxes follow-->
-    
-    <div class="container" id="bottomHolder">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="thisHoldsTheFun">
-            <div id="commentBox" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                <div id="buttonSection">
-                    <p  id="commentHeader">Comments:</p>
-                    <input type="text" id="nameInput" placeholder="Enter name">
-                    <textarea  type="text" class="form-control form-control-sm" id="commentInput" placeholder="Type your comment here">
-
-                    </textarea>
-                    <button id="commentSubmission" class="btn btn-primary">Submit</button>
-                </div>
-                <div id="commentSection">
-
-                </div>
-            </div>
-            <div id="newsHolder" class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
-
-                <img id="leftButt" class="col-lg-1 img-responsive" src="img/leftarrow.png">
-
-                <div id="testArea" class="center-block">
                 </div>
 
-                <img id="rightButt" class="col-lg-1 img-responsive" src="img/rightarrow.png">
 
+            </header>
 
-            </div>
-            
-            
         </div>
-    </div>
-    <!-- Not valid input modal -->
-    <div id="notValidInput" class="displayNone">
-        <div id='overlay'></div>
-        <div id='modalMain'>
-          <div id='content'>
-              <p>You did not fill out all the fields.  Try again!</p>
-              <div class="btn btn-sm btn-success pull-right" id="closeThisNoFields">Close</div>
-          </div>
+
+        <!--comment boxes follow-->
+
+        <div class="container" id="bottomHolder">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="thisHoldsTheFun">
+                <div id="commentBox" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div id="buttonSection">
+                        <p  id="commentHeader">Comments:</p>
+                        <input type="text" id="nameInput" placeholder="Enter name">
+                        <textarea class="form-control form-control-sm" id="commentInput" placeholder="Type your comment here">
+
+                        </textarea>
+                        <button id="commentSubmission" class="btn btn-primary">Submit</button>
+                    </div>
+                    <div id="commentSection">
+
+                    </div>
+                </div>
+                <div id="newsHolder" class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+
+                    <img id="leftButt" class="col-lg-1 img-responsive" src="img/leftarrow.png">
+
+                    <div id="testArea" class="center-block">
+                    </div>
+
+                    <img id="rightButt" class="col-lg-1 img-responsive" src="img/rightarrow.png">
+
+
+                </div>
+
+
+            </div>
+        </div>
+        <!-- Not valid input modal -->
+        <div id="notValidInput" class="displayNone">
+            <div id='overlay'></div>
+            <div id='modalMain'>
+              <div id='content'>
+                  <p>You did not fill out all the fields.  Try again!</p>
+                  <div class="btn btn-sm btn-success pull-right" id="closeThisNoFields">Close</div>
+              </div>
           </div>
 
       </div>

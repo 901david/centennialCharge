@@ -163,7 +163,7 @@ footer {
 			opacity:0.9;
 		}
 	#commentInput {
-		width: 350px;
+		width: 250px;
 	}
 
 	.hideForNow {
@@ -344,14 +344,6 @@ footer {
 }
 #slightlyOff {
 	margin-right: 16px;
-}
-
-#map {
-	margin:0 !important;
-}
-
-#map{
-	float: right;
 }
 #thisHoldsTheFun {
 	margin-top: 2%;

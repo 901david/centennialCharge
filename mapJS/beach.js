@@ -25,7 +25,7 @@ function initMap() {
        [sunsetBeach.info, sunsetBeach.lat, sunsetBeach.long, 2],
      ];
  
-   var map = new google.maps.Map(document.getElementById("map"), {
+   var map = new google.maps.Map(document.getElementById("mapBox"), {
      zoom: 3,
      center: new google.maps.LatLng(36.778259, -119.417931),
      mapTypeId: google.maps.MapTypeId.ROADMAP
