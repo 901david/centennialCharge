@@ -8,10 +8,10 @@ var config = {
   messagingSenderId: "284867902243"
 };
 firebase.initializeApp(config);
-var databaseRef = firebase.database().ref(pageValue);
-var userName;
-var userComment;
 $(document).ready(function(){
+  let userName;
+  let userComment;
+  let databaseRef = firebase.database().ref(pageValue);
  $("#commentSubmission").click(function () {
 
   userName = $("#nameInput").val().trim();

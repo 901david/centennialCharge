@@ -9,15 +9,15 @@ var config = {
 	messagingSenderId: "284867902243"
 };
 firebase.initializeApp(config);
-var databaseRefContact = firebase.database().ref("/contactUs");
+
 
 $(document).ready(function(){
-	
+
 	$("#giveUsData").click(function (event) {
 		event.preventDefault();
-		var nameVal = $("#name").val().trim();
-		var emailVal = $("#email").val().trim();
-		var messageVal = $("#message").val().trim();
+		let nameVal = $("#name").val().trim();
+		let emailVal = $("#email").val().trim();
+		let messageVal = $("#message").val().trim();
 		if ((nameVal === "") || (emailVal === "") || (messageVal === "")) {
 			$("#notAllFields").removeClass("displayNone");
 			$("#notAllFields").addClass("displayBlock");
@@ -25,13 +25,13 @@ $(document).ready(function(){
 				$("#notAllFields").removeClass("displayBlock");
 				$("#notAllFields").addClass("displayNone");
 			});
-			
+
 		}
 		else if ((emailVal.includes("@")) && (emailVal.includes("."))){
 			$("#name").val("");
 			$("#email").val("");
 			$("#message").val("");
-			
+			let databaseRefContact = firebase.database().ref("/contactUs");
 			databaseRefContact.push({
 				name: nameVal,
 				email: emailVal,
@@ -52,16 +52,5 @@ $(document).ready(function(){
 				$("#notValid").addClass("displayNone");
 			});
 		}
-		
-		
-		
-		
 	});
-
-
-	
-
-
-	
-	
 });
