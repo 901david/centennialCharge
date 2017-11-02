@@ -1,3 +1,5 @@
+Visit Application: https://901david.github.io/centennialCharge/
+
 # Centennial Charge
 
 This  was a group project I contributed to, whose general idea was to create an ironic Colorado website where ironic created articles would lead users to find genuine Colorado Solutions. For instance if you wanted to get altitude sickness you could visit one of the locations we mapped out using the Google Maps API, and if you genuinely had altitude sickness, you could visit the links below the psuedo articles to find locations for actual oxygen bars.  If you wanted to find beaches you could not find in Colorado visit that link, and also find some "Colorado Beaches" you could visit as well.  Lastly, if you are infuriated by Denver traffic, as most people are, you can visit that article to find out how traffic looks currently in Denver, and some link to also find out how to beat Denver traffic in some of its worst spots.
